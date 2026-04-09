@@ -1,0 +1,116 @@
+.cardWrapper {
+  perspective: 1000px;
+}
+
+.card {
+  position: relative;
+  width: 400px;
+  height: 370px;
+  border-radius: 1em;
+  background-color: var(--offWhite);
+  transition: transform 0.6s ease;
+  transform-style: preserve-3d;
+}
+.cardInfo {
+  height: 330px;
+}
+
+.flipped {
+  transform: rotateY(180deg);
+}
+
+.face {
+  position: absolute;
+  inset: 0;
+  height: 100%;
+  backface-visibility: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+}
+
+.back {
+  transform: rotateY(180deg);
+  display: flex;
+}
+
+.title {
+  font-size: 1.5em;
+  margin-top: 1em;
+  font-weight: 800;
+  padding: 0 0.3em;
+}
+.subtitle {
+  font-size: 1.8em;
+  text-align: center;
+  color: var(--dark-blue);
+  padding: 0 1em;
+  margin-top: 1em;
+  font-weight: 600;
+}
+.content {
+  font-size: 1em;
+  line-height: 200%;
+  font-weight: 300;
+  padding: 0 2em;
+  text-align: center;
+}
+.cardWrapper {
+  transition: transform 0.3s ease;
+}
+
+.cardWrapper:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(255, 255, 255, 0.414);
+  border-radius: 1em;
+}
+
+.front {
+  position: relative;
+}
+
+.flipHint {
+  position: absolute;
+  bottom: 0.5rem;
+  right: 1rem;
+}
+
+.button {
+  position: absolute;
+  bottom: 20;
+  background-color: var(--dark-blue);
+  color: var(--offWhite);
+  border: none;
+  padding: 0.5em 1em;
+  border-radius: 0.5em;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  font-weight: 600;
+}
+.button:hover {
+  transform: scale(1.1);
+}
+.link {
+  color: var(--offWhite);
+}
+
+.image {
+  width: 60px;
+  height: 60px;
+  margin-top: 2em;
+  filter: brightness(0) saturate(100%) invert(20%) sepia(90%) saturate(300%)
+    hue-rotate(180deg);
+}
+
+.buttonFront{
+  position: absolute;
+  bottom: 10%;
+  left: 37%;
+  padding: .5em 1em;
+  border-radius: .5em;
+  background-color: var(--dark-blue);
+}
+.btnText{
+  color: var(--offWhite);
+}

@@ -1,0 +1,25 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 1200px;
+  margin: 0 auto;
+  margin-bottom: 2.5em;
+}
+.title {
+  font-size: 2em;
+  text-align: center;
+  margin-top: 1em;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+.content {
+  display: flex;
+  justify-content: center;
+  gap: 2em;
+  margin-top: 2em;
+}
+.card {
+  border: 1px solid var(--dark-blue);
+  height: 400px;
+}

@@ -1,0 +1,46 @@
+.container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2em;
+}
+.areaSummary{
+  border: 1px solid var(--dark-blue);
+  border-radius: .5em;
+  width: 500px;
+  height: 440px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 1em;
+  background: var(--offWhite);
+  margin-top: 1em;
+}
+.areaSummary h1{
+  font-size: 1.5em;
+  font-weight: 700;
+}
+.areaSummary h2{
+  font-size: 1.2em;
+}
+.areaSummary h3{
+  font-weight: 600;
+  color: #737373;
+}
+.listSummary{
+  display: flex;
+  flex-direction: column;
+  list-style: disc;
+  margin-left: 1em;
+  gap: .5em
+}
+
+.listSummary li{
+  font-size: 1.1em;
+  font-weight: 600;
+}
+.buttonDiv{
+  align-self: center;
+  text-align: center;
+}
