@@ -6,27 +6,8 @@ import { Areas } from "@/components/Areas";
 import { Cards } from "@/components/Cards";
 import { WhyChooseUs } from "@/components/WhyChooseUs";
 import { CTAButton } from "@/components/CTAButton";
+import {cardData} from '../db/weCardData.json'
 
-const cardData = [
-  {
-    id: 1,
-    title: "Consultoria Jurídica Especializada",
-    content:
-      " Oferecemos orientação jurídica especializada e totalmente personalizada para cada um de nossos clientes com o objetivo de assegurar a melhor tomada de decisão em cada cenário.",
-  },
-  {
-    id: 2,
-    title: "Atuação Extrajudicial e Administrativa",
-    content:
-      "Lidamos com soluções e procedimentos extrajudiciais e administrativos, desde a solução de conflitos a requerimentos em órgãos públicos.",
-  },
-  {
-    id: 3,
-    title: "Atuação no Contencioso",
-    content:
-      "Atuamos na resolução de disputas em processos judiciais de pessoas dísicas e jurídicas, defendendo seus interesses como autor, réu ou terceiro interessado, sempre em busca do melhor resultado.",
-  },
-];
 
 export default function Home() {
   return (

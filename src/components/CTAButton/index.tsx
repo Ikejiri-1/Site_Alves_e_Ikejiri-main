@@ -10,7 +10,7 @@ interface CTAProps{
 
 export const CTAButton=({content, type, msn} : CTAProps)=>{
     const phone = "12981131591";
-  const message = msn
+    const message = msn
 
     return(
         <>

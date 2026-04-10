@@ -1,0 +1,34 @@
+ {
+    "cardArea" : [
+  {
+    "id": 1,
+    "tabs": "TRIBUTÁRIO",
+    "content": "Execução fiscal - Dívida Ativa - Parcelamentos",
+    "button": true
+  },
+  {
+    "id": 2,
+    "tabs": "CIVIL",
+    "content": "Contratos - Cobrança - Responsabilidade civil",
+    "button": true
+  },
+  {
+    "id": 3,
+    "tabs": "FAMÍLIA E SUCESSÕES",
+    "content": "Divórcio - Guarda - Alimentos - Inventário",
+    "button": true
+  },
+  {
+    "id": 4,
+    "tabs": "PREVIDENCIÁRIO",
+    "content": "INSS - Aposentadoria - BPC/LOAS",
+    "button": true
+  },
+  {
+    "id": 5,
+    "tabs": "IMOBILIÁRIO",
+    "content": "Contratos - Regularização - Locação",
+    "button": true
+  }
+]
+}

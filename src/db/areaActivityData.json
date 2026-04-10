@@ -1,0 +1,147 @@
+ {
+    "areaActivity" : [
+    {
+      "id":1,
+      "area":"Tributário",
+      "summary":"Defesa de contribuintes -- pessoas físicas e jurídicas -- em todas as fases do contencioso tributário",
+      "servicesList":[
+        {
+          "id":1,
+          "service":"Defesa em Execução Fiscal (Federal, Estadual, Municipal)"
+        },
+        {
+          "id":2,
+          "service":"Impugnação de inscrição em Dívida Ativa (CDA)"
+        },
+        {
+          "id":3,
+          "service":"Negociação e acompanhamento de Transação Tributária (PGFN e Receita Federal)"
+        },
+        {
+          "id":4,
+          "service":"Parcelamento de débitos fiscais"
+        },
+        {
+          "id":5,
+          "service":"Prescrição intercorrente e extinção de execuções fiscais"
+        },
+        {
+          "id":6,
+          "service":"Desbloqueio de contas via SISBAJUD"
+        }
+      ],
+      "buttonText":  "Falar pelo Whatsapp sobre Tributário" 
+    },
+    {
+      "id":2,
+      "area":"Família e Sucessões",
+      "summary":"Assessoria jurídica em questões que envolvem relações familiares e trasmissão de patrimônio",
+      "servicesList":[
+        {
+          "id":1,
+          "service":"Divórcio consensual e litigioso"
+        },
+        {
+          "id":2,
+          "service":"Guarda de filhos"
+        },
+        {
+          "id":3,
+          "service":"Revisão e fixação de alimentos"
+        },
+        {
+          "id":4,
+          "service":"Inventário judicial e extrajudicial"
+        },
+        {
+          "id":5,
+          "service":"União estável"
+        },
+        {
+          "id":6,
+          "service":"Planejamento sucessório"
+        }
+      ],
+      "buttonText": "Falar pelo Whatsapp sobre Família e Sucessões"
+    },
+    {
+      "id":3,
+      "area":"Imobiliário",
+      "summary":"Orientação jurídica em negócios e conflitos relacionados a imóveis",
+      "servicesList":[
+        {
+          "id":1,
+          "service":"Análise e elaboração de contratos de compra e venda"
+        },
+        {
+          "id":2,
+          "service":"Contratos de locação"
+        },
+        {
+          "id":3,
+          "service":"Regularização de imóveis"
+        },
+        {
+          "id":4,
+          "service":"Usucapião"
+        },
+        {
+          "id":5,
+          "service":"Assessoria em financiamentos imobiliários"
+        }
+      ],
+      "buttonText": "Falar pelo Whatsapp sobre Imobiliário"
+    },
+    {
+      "id":4,
+      "area":"Previdenciário",
+      "summary":"Assessoria e segurados do INSS na obtenção de revisão de benefícios previdenciários",
+      "servicesList":[
+        {
+          "id":1,
+          "service":"Aposentadoria por tempo de contribuição, idade e especial"
+        },
+        {
+          "id":2,
+          "service":"Auxílio por incapacidade temporária e permanente"
+        },
+        {
+          "id":3,
+          "service":"Benefício de Prestação Continuada (BPC/LOAS)"
+        },
+        {
+          "id":4,
+          "service":"Revisão de benefícios"
+        },
+        {
+          "id":5,
+          "service":"Recursos administrativos e ações judiciais"
+        }
+      ],
+      "buttonText": "Falar pelo Whatsapp sobre Previdenciário"
+    },
+    {
+      "id":5,
+      "area":"Civil",
+      "summary":"Atuação em questões cíveis que envolvem pessoas físicas e jurídicas",
+      "servicesList":[
+        {
+          "id":1,
+          "service":"Elaboração e revisão de contratos"
+        },
+        {
+          "id":2,
+          "service":"Ações de cobrança"
+        },
+        {
+          "id":3,
+          "service":"Responsabilidade civil"
+        },
+        {
+          "id":4,
+          "service":"Resolução de conflitos contratuais"
+        }
+      ],
+      "buttonText": "Falar pelo Whatsapp sobre Civil"
+    }
+  ]}
