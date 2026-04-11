@@ -30,7 +30,8 @@
           "service":"Desbloqueio de contas via SISBAJUD"
         }
       ],
-      "buttonText":  "Falar pelo Whatsapp sobre Tributário" 
+      "buttonText":  "Falar pelo Whatsapp sobre Tributário",
+      "msn": "Olá, gostaria de obter mais informações sobre os serviços na área Tributário."
     },
     {
       "id":2,
@@ -62,7 +63,8 @@
           "service":"Planejamento sucessório"
         }
       ],
-      "buttonText": "Falar pelo Whatsapp sobre Família e Sucessões"
+      "buttonText": "Falar pelo Whatsapp sobre Família e Sucessões",
+      "msn": "Olá, gostaria de obter mais informações sobre os serviços na área Família e Sucessões."
     },
     {
       "id":3,
@@ -90,7 +92,8 @@
           "service":"Assessoria em financiamentos imobiliários"
         }
       ],
-      "buttonText": "Falar pelo Whatsapp sobre Imobiliário"
+      "buttonText": "Falar pelo Whatsapp sobre Imobiliário",
+      "msn": "Olá, gostaria de obter mais informações sobre os serviços na área Imobiliário."
     },
     {
       "id":4,
@@ -118,7 +121,8 @@
           "service":"Recursos administrativos e ações judiciais"
         }
       ],
-      "buttonText": "Falar pelo Whatsapp sobre Previdenciário"
+      "buttonText": "Falar pelo Whatsapp sobre Previdenciário",
+      "msn": "Olá, gostaria de obter mais informações sobre os serviços na área Previdenciário."
     },
     {
       "id":5,
@@ -142,6 +146,7 @@
           "service":"Resolução de conflitos contratuais"
         }
       ],
-      "buttonText": "Falar pelo Whatsapp sobre Civil"
+      "buttonText": "Falar pelo Whatsapp sobre Civil",
+      "msn": "Olá, gostaria de obter mais informações sobre os serviços na área Civil."
     }
   ]}

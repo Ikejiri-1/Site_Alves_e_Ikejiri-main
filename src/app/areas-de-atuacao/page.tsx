@@ -35,7 +35,7 @@ export default function AreasDeAtuacao() {
                 
             </div>
               <div className={styles.buttonDiv}>
-                <CTAButton type="areas" content={area.buttonText} msn=""/>
+                <CTAButton type="areas" content={area.buttonText} msn={area.msn}/>
               </div>
           </div>
           

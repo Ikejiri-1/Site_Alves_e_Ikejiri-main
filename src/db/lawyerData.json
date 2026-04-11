@@ -1,4 +1,5 @@
- {"lawyerCard" : [
+ {
+    "lawyerCard" : [
     {
         "id":1,
         "name": "Caio Ikejiri",
@@ -12,5 +13,5 @@
         "OAB": "OAB/SP 517.011",
         "description": "Pós-graduando em Direito Imobiliário e Direito da Família e Sucessões. Formado pela Universidade de Taubaté (Unitau). Atua em questões envolvendo imóveis, contratos, divórcio, guarda, alimentos e inventários.",
         "photo":""
-    }
-]}
+    }]
+}
