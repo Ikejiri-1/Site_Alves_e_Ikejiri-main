@@ -11,7 +11,7 @@ interface CTAProps{
 
 export const CTAButton=({content, type, msn} : CTAProps)=>{
     const phone = "12981131591";
-    const message = msn
+    const message = type === "default" || type === "contactWPP" ? "Olá, gostaria de mais informações sobre os serviços oferecidos." : msn;
 
     const emailIkejiri = "caio.ikejiri@adv.oabsp.org.br"
     const subjectIkejiri = "Preciso de atendimento jurídico (Tributário -- Previdenciário)"
