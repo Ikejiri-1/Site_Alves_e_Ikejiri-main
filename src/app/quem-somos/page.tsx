@@ -3,23 +3,7 @@ import img from '../../assets/wpaper.webp'
 import Image from "next/image";
 import styles from './page.module.css'
 import { CTAButton } from "@/components/CTAButton";
-
-const lawyerCard = [
-    {
-        id:1,
-        name: "Caio Ikejiri",
-        OAB: "OAB/SP 511.392",
-        description: "Pós-graduado em Direito Tributário Empresarial. Formado pela Universidade de Taubaté (Unitau). Atua na defesa de pessoas físicas e jurídicas em execuções fiscais, regularização de dívidas tributárias e parcelamentos fiscais.",
-        photo: ""
-    },
-    {
-        id:2,
-        name: "Caio Alves de Faria",
-        OAB: "OAB/SP 517.011",
-        description: "Pós-graduado em Direito Imobiliário e Direito da Família e Sucessões. Formado pela Universidade de Taubaté (Unitau). Atua em questões envolvendo imóveis, contratos, divórcio, guarda, alimentos e inventários.",
-        photo:""
-    }
-]
+import { lawyerCard } from '../../db/lawyerData.json'
 
 
 export default function QuemSomos(){

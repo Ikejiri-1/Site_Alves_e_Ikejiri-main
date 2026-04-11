@@ -21,3 +21,15 @@
     background-color: #047232;
     transition: all ease-in-out;
 }
+
+.CTAContact{
+    background-color: var(--dark-blue);
+    padding: .5em;
+    color: var(--offWhite);
+    border-radius: .5em;
+}
+
+.CTAContact:hover{
+    background-color: #071fad;
+    transition: all ease-in-out 0.3s;
+}

@@ -18,6 +18,11 @@ const navLinks = [
     name: "Quem somos",
     path: "/quem-somos",
   },
+  {
+    id: 4,  
+    name: "Contato",
+    path: "/contato",
+  },
 ];
 
 export const Header = () => {

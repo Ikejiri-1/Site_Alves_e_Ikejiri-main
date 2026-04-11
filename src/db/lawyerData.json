@@ -1,0 +1,16 @@
+ {"lawyerCard" : [
+    {
+        "id":1,
+        "name": "Caio Ikejiri",
+        "OAB": "OAB/SP 511.392",
+        "description": "Pós-graduando em Direito Tributário Empresarial. Formado pela Universidade de Taubaté (Unitau). Atua na defesa de pessoas físicas e jurídicas em execuções fiscais, regularização de dívidas tributárias e parcelamentos fiscais.",
+        "photo": ""
+    },
+    {
+        "id":2,
+        "name": "Caio Alves de Faria",
+        "OAB": "OAB/SP 517.011",
+        "description": "Pós-graduando em Direito Imobiliário e Direito da Família e Sucessões. Formado pela Universidade de Taubaté (Unitau). Atua em questões envolvendo imóveis, contratos, divórcio, guarda, alimentos e inventários.",
+        "photo":""
+    }
+]}

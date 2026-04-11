@@ -1,0 +1,35 @@
+.contactCardsContainer{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3em;
+}
+.contactCard{
+    border: 1px solid var(--dark-blue);
+    border-radius: .5em;
+    width: 400px;
+    padding: 1em;
+}
+.contactType{
+    font-size: 1.3em;
+    color: #515151;
+    font-weight: 700;
+}
+.contactValue{
+    font-size: 1.5em;
+    font-weight: 600;
+    color: var(--dark-blue);
+}
+.title{
+    text-align: center;
+    margin-top: 1em;
+    font-size:2em;
+    font-weight: 800;
+}
+.buttonDiv{
+    display: flex;
+    justify-content: end;
+    margin-top: 1em;
+}
