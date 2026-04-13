@@ -3,10 +3,8 @@ import img from "../assets/wpaper.webp";
 import { OfficeSum } from "@/components/OfficeSum";
 import styles from "./page.module.css";
 import { Areas } from "@/components/Areas";
-import { Cards } from "@/components/Cards";
 import { WhyChooseUs } from "@/components/WhyChooseUs";
 import { CTAButton } from "@/components/CTAButton";
-import {cardData} from '../db/weCardData.json'
 
 
 export default function Home() {
@@ -18,11 +16,6 @@ export default function Home() {
       </section>
       <section className={styles.objectivesSection}>
         <OfficeSum />
-      </section>
-      <section className={styles.cardsSection}>
-        {cardData.map((c) => {
-          return <Cards key={c.id} title={c.title} content={c.content}></Cards>;
-        })}
       </section>
       <section>
         <Areas />
