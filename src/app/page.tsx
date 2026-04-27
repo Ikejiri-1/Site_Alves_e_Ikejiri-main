@@ -11,8 +11,8 @@ export default function Home() {
   return (
     <>
       <section>
-        <MainImage img={img} alt="" title="Assessoria jurídica especializada para pessoas físicas e empresas em todo o Brasil." 
-        description="Atendimento online. Tributário - Família - Imobiliário - Previdenciário - Civil" CTA={true} />
+        <MainImage img={img} alt="" title="Defesa estratégica e Consultoria jurídica de alta performance para seus bens e negócios" 
+        description="Soluções ágeis e atendimento 100% digital para clientes em todo Brasil" CTA={true} />
       </section>
       <section className={styles.objectivesSection}>
         <OfficeSum />

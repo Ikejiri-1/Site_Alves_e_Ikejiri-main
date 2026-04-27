@@ -8,9 +8,8 @@ import { lawyerCard } from '../../db/lawyerData.json'
 
 export default function QuemSomos(){
     return(
-        <>
-        <MainImage img={img} alt="" title="Quem somos"/>
-        <section>
+        <>        
+        <section className={styles.section}>
             <div className={styles.institutionalContainer}>
                 <figure>
                     <Image src={img} alt="" className={styles.image}/>

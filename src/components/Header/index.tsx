@@ -4,7 +4,8 @@ import styles from "./header.module.css";
 import logo from "../../assets/logo.png";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { useState, useEffect } from "react";
+import { useState, useEffect, useCallback } from "react";
+import path from "path";
 
 const navLinks = [
   { id: 1, name: "Home", path: "/" },
@@ -26,17 +27,26 @@ const navLinks = [
 ];
 
 export const Header = () => {
-  const [solid, setSolid] = useState(false);
-
-  useEffect(() => {
-    const handleScroll = () => {
-      setSolid(window.scrollY > 200);
-    };
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
-
   const pathname = usePathname();
+  const [solid, setSolid] = useState(false);
+  
+  const handleScroll = useCallback(()=>{
+    if(pathname === "/quem-somos"){
+      setSolid(true);
+      }
+      else{
+        setSolid(window.scrollY >200)
+    }
+  },[pathname])
+
+  useEffect(()=>{
+    handleScroll()
+    window.addEventListener("scroll", handleScroll)
+    return()=> window.removeEventListener("scroll", handleScroll)
+  },
+  [handleScroll]
+)
+  
   return (
     <header className={`${styles.heading} ${solid ? styles.solid : ""}`}>
       <div className={styles.container}>

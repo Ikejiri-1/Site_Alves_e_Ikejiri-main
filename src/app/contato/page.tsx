@@ -7,7 +7,7 @@ const contacts = [
     {
         id:1,
         type: "Whatsapp",
-        value: "(12) 98113-1581",
+        value: "(12) 98113-1591",
         button: "contactWPP",
         buttonText: "Falar pelo Whatsapp",
     },

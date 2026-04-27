@@ -3,7 +3,7 @@
     {
       "id":1,
       "area":"Tributário",
-      "summary":"Defesa de contribuintes -- pessoas físicas e jurídicas -- em todas as fases do contencioso tributário",
+      "summary":"Defesa contra execuções fiscais e gestão estratégica de débitos tributários",
       "servicesList":[
         {
           "id":1,
@@ -36,7 +36,7 @@
     {
       "id":2,
       "area":"Família e Sucessões",
-      "summary":"Assessoria jurídica em questões que envolvem relações familiares e trasmissão de patrimônio",
+      "summary":"Proteção do patrimônio familiar e resoluções sucessórias seguras",
       "servicesList":[
         {
           "id":1,
@@ -69,7 +69,7 @@
     {
       "id":3,
       "area":"Imobiliário",
-      "summary":"Orientação jurídica em negócios e conflitos relacionados a imóveis",
+      "summary":"Segurança jurídica em transações, posses e regularização de imóveis",
       "servicesList":[
         {
           "id":1,
@@ -98,11 +98,11 @@
     {
       "id":4,
       "area":"Previdenciário",
-      "summary":"Assessoria e segurados do INSS na obtenção de revisão de benefícios previdenciários",
+      "summary":"Assessoria a segurados do INSS na obtenção de revisão de benefícios previdenciários",
       "servicesList":[
         {
           "id":1,
-          "service":"Aposentadoria por tempo de contribuição, idade e especial"
+          "service":"Mandado de segurança"
         },
         {
           "id":2,
@@ -114,10 +114,6 @@
         },
         {
           "id":4,
-          "service":"Revisão de benefícios"
-        },
-        {
-          "id":5,
           "service":"Recursos administrativos e ações judiciais"
         }
       ],

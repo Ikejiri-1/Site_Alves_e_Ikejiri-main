@@ -39,7 +39,7 @@ export function MainImage({ img, title, alt, description, CTA }: MainImageProps)
       {
         CTA &&(
           <div className={styles.button}>
-          <CTAButton content = {'Falar pelo Whatsapp'} type="default" msn=""/>
+          <CTAButton content = {'Falar com Advogado'} type="default" msn=""/>
           </div>
         )
       }

@@ -1,5 +1,5 @@
 .CTAbtn{
-    background-color: #0fbe58;
+    background-color: #25D366;
     padding: 0.5em;
     border-radius: .5em;
     font-size: 1.5em;
@@ -9,7 +9,7 @@
 }
 
 .CTAArea{
-    background-color: #0fbe58;
+    background-color: #25D366 ;
     padding: .5em;
     border-radius: .5em;
     color: var(--offWhite);
