@@ -10,14 +10,6 @@ export default function AreasDeAtuacao() {
   return (
     <>
       <section className={styles.container}>
-        <MainImage
-          img={img}
-          alt=""
-          title="Áreas de Atuação"
-          description=""
-        ></MainImage>
-      </section>
-      <section className={styles.container}>
         {areaActivity.map(area=>(
           <div key={area.id} className={styles.areaSummary}>
             <div className={styles.areaHead}>

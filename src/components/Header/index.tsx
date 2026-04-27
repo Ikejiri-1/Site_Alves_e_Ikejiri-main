@@ -31,7 +31,7 @@ export const Header = () => {
   const [solid, setSolid] = useState(false);
   
   const handleScroll = useCallback(()=>{
-    if(pathname === "/quem-somos"){
+    if(pathname === "/quem-somos" || pathname === "/areas-de-atuacao"){
       setSolid(true);
       }
       else{

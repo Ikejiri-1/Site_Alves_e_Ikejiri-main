@@ -11,7 +11,7 @@ export default function Home() {
   return (
     <>
       <section>
-        <MainImage img={img} alt="" title="Defesa estratégica e Consultoria jurídica de alta performance para seus bens e negócios" 
+        <MainImage img={img} alt="" title="Defesa estratégica e consultoria jurídica de alta performance para seus bens e negócios" 
         description="Soluções ágeis e atendimento 100% digital para clientes em todo Brasil" CTA={true} />
       </section>
       <section className={styles.objectivesSection}>
@@ -25,9 +25,9 @@ export default function Home() {
       </section>
       <div className={styles.CTA}>
         <h4>Tem uma dúvida jurídica ou precisa de orientação?</h4>
-        <h5>Entre em contato pelo Whatsapp e nos conte a sua situação!</h5>
+        <h5>Entre em contato pelo Whatsapp e converse com um advogado!</h5>
       <div>
-        <CTAButton content="Falar pelo Whatsapp" type="default" msn=""/>
+        <CTAButton content="Falar com Advogado" type="default" msn=""/>
       </div>
       </div>
     </>

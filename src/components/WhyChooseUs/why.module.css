@@ -21,5 +21,6 @@
 }
 .card {
   border: 1px solid var(--dark-blue);
-  height: 400px;
+  height: 270px;
+  border-radius: 1em;
 }
