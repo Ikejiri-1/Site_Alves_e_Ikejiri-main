@@ -31,11 +31,11 @@ export const Header = () => {
   const [solid, setSolid] = useState(false);
   
   const handleScroll = useCallback(()=>{
-    if(pathname === "/quem-somos" || pathname === "/areas-de-atuacao"){
-      setSolid(true);
+    if(pathname === "/"){
+      setSolid(window.scrollY >200)
       }
       else{
-        setSolid(window.scrollY >200)
+      setSolid(true);
     }
   },[pathname])
 
