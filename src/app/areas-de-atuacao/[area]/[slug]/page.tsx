@@ -1,4 +1,5 @@
 import { getArticleBySlug, allArticles } from '@/site-content';
+import ArticleRenderer from '@/site-content/ArticleRenderer';
 import { notFound } from 'next/navigation';
 
 export function generateStaticParams() {
@@ -30,7 +31,7 @@ export default async function ArticlePage({
       {article.sections.map((section) => (
         <section key={section.heading}>
           <h2>{section.heading}</h2>
-          <p>{section.body}</p>
+          <ArticleRenderer blocks={section.blocks} />
         </section>
       ))}
     </main>

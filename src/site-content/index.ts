@@ -6,6 +6,7 @@ import { previdenciarioArticles } from './data/previdenciario';
 import type { Article, PracticeArea, PracticeAreaMeta } from './types/content';
 
 export type { Article, PracticeArea, PracticeAreaMeta };
+export type { ContentBlock, TextBlock, ListBlock, OrderedListBlock, SimpleTableBlock, ComparisonTableBlock } from './types/content';
 
 // ─── Metadados das áreas de prática ────────────────────────────────────────
 
@@ -54,28 +55,19 @@ export const allArticles: Article[] = [
 
 // ─── Helpers ────────────────────────────────────────────────────────────────
 
-/**
- * Retorna todos os artigos de uma área de prática específica.
- */
 export function getArticlesByArea(area: PracticeArea): Article[] {
   return allArticles.filter((article) => article.area === area);
 }
 
-/**
- * Retorna um artigo pelo slug. Retorna undefined se não encontrado.
- */
 export function getArticleBySlug(slug: string): Article | undefined {
   return allArticles.find((article) => article.slug === slug);
 }
 
-/**
- * Retorna os metadados de uma área de prática pelo slug.
- */
 export function getPracticeAreaMeta(slug: PracticeArea): PracticeAreaMeta | undefined {
   return practiceAreas.find((area) => area.slug === slug);
 }
 
-// ─── Re-exports dos arrays por área (para uso direto quando necessário) ─────
+// ─── Re-exports ─────────────────────────────────────────────────────────────
 
 export {
   tributarioArticles,
