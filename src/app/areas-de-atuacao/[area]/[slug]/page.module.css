@@ -1,0 +1,81 @@
+.main {
+  margin: 0 auto;
+  margin-top: 12em;
+  width: 1600px;
+}
+
+.breadcrumb {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  font-size: 1rem;
+  color: #888;
+  margin-bottom: 2.5rem;
+}
+
+.breadcrumbHome {
+  color: #888;
+  text-decoration: none;
+  white-space: nowrap;
+  transition: color 0.2s;
+}
+
+.breadcrumbHome:hover {
+  color: #111;
+}
+
+.breadcrumbDivider {
+  color: #ccc;
+  flex-shrink: 0;
+}
+
+/* Lista horizontal de áreas */
+.breadcrumbAreas {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.25rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.breadcrumbItem {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+.breadcrumbSeparator {
+  color: #ccc;
+  font-size: 0.75rem;
+  user-select: none;
+}
+
+.breadcrumbLink {
+  color: #888;
+  text-decoration: none;
+  white-space: nowrap;
+  transition: color 0.2s;
+  padding: 0.15rem 0.35rem;
+  border-radius: 4px;
+}
+
+.breadcrumbLink:hover {
+  color: #111;
+  background: #f5f5f5;
+}
+
+/* Área ativa — sem link, destaque visual */
+.breadcrumbActive {
+  color: #111;
+  font-weight: 600;
+  background: #f0f0f0;
+  cursor: default;
+}
+
+.breadcrumbActive:hover {
+  color: #111;
+  background: #f0f0f0;
+}

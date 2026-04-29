@@ -1,32 +1,31 @@
-"use client";
+'use client';
 
-import { Cards } from "../Cards";
-import styles from "./why.module.css";
-import agil from "../../../public/assets/agil.png";
-import foco from "../../../public/assets/foco.png";
-import pessoas from "../../../public/assets/pessoas-de-negocio.png";
-import saudacao from "../../../public/assets/saudacao-de-duas-maos-de-empresarios.png";
+import { Cards } from '../Cards';
+import styles from './why.module.css';
+import agil from '../../../public/assets/agil.png';
+import foco from '../../../public/assets/foco.png';
+import pessoas from '../../../public/assets/pessoas-de-negocio.png';
+import saudacao from '../../../public/assets/saudacao-de-duas-maos-de-empresarios.png';
 
 const data = [
   {
     id: 1,
-    description: "Agilidade na resolução dos casos.",
+    description: 'Agilidade na resolução dos casos.',
     icon: agil,
   },
   {
     id: 2,
-    description: "Transparência em cada etapa.",
+    description: 'Transparência em cada etapa.',
     icon: saudacao,
   },
   {
     id: 3,
-    description: "Atendimento personalizado.",
+    description: 'Atendimento personalizado.',
     icon: pessoas,
   },
   {
     id: 4,
-    description:
-      "Profissionais dedicados com foco em resultado.",
+    description: 'Profissionais dedicados com foco em resultado.',
     icon: foco,
   },
 ];

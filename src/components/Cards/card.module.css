@@ -1,44 +1,20 @@
-.cardWrapper {
-  perspective: 1000px;
-}
-
 .card {
   position: relative;
   width: 400px;
-  height: 370px;
+  height: 200px;
   border-radius: 1em;
-  background-color: var(--offWhite);
-  transition: transform 0.6s ease;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
   transform-style: preserve-3d;
+  border: 1px solid #e5e5e5;
 }
-.cardInfo {
-  height: 330px;
-}
-
-.flipped {
-  transform: rotateY(180deg);
-}
-
-.face {
-  position: absolute;
-  inset: 0;
-  height: 100%;
-  backface-visibility: hidden;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  cursor: pointer;
-}
-
-.back {
-  transform: rotateY(180deg);
-  display: flex;
-}
-
 .title {
+  text-align: center;
   font-size: 1.5em;
-  font-weight: 800;
+  font-weight: 500;
   padding: 0 0.3em;
+  margin-top: 1em;
 }
 .subtitle {
   font-size: 1.8em;
@@ -60,36 +36,11 @@
 }
 
 .cardWrapper:hover {
-  transform: scale(1.05);
+  transform: scale(-2px);
   box-shadow: 0 4px 8px rgba(255, 255, 255, 0.414);
   border-radius: 1em;
 }
 
-.front {
-  position: relative;
-}
-
-.flipHint {
-  position: absolute;
-  bottom: 0.5rem;
-  right: 1rem;
-}
-
-.button {
-  position: absolute;
-  bottom: 20;
-  background-color: var(--dark-blue);
-  color: var(--offWhite);
-  border: none;
-  padding: 0.5em 1em;
-  border-radius: 0.5em;
-  cursor: pointer;
-  transition: transform 0.3s ease;
-  font-weight: 600;
-}
-.button:hover {
-  transform: scale(1.1);
-}
 .link {
   color: var(--offWhite);
 }
@@ -102,14 +53,37 @@
     hue-rotate(180deg);
 }
 
-.buttonFront{
+.btn {
   position: absolute;
-  bottom: 10%;
-  left: 37%;
-  padding: .5em 1em;
-  border-radius: .5em;
-  background-color: var(--dark-blue);
+  bottom: 5%;
+  right: 5%;
 }
-.btnText{
-  color: var(--offWhite);
+
+.btn ::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 10; /* Faz ele ficar por cima de tudo */
+}
+
+.card:hover {
+  border-color: #111;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+  transform: translateY(-2px);
+}
+
+.card:focus-visible {
+  outline: 2px solid #111;
+  outline-offset: 2px;
+}
+
+.btn {
+  transition: letter-spacing 0.2s;
+}
+
+.btn:hover {
+  letter-spacing: 0.02em;
 }
