@@ -79,3 +79,32 @@
   color: #111;
   background: #f0f0f0;
 }
+
+.mainTitle {
+  font-size: 1.6em;
+  font-weight: 600;
+}
+
+.description {
+  font-size: 1.2em;
+  color: #888;
+  margin-bottom: 2em;
+}
+
+.headingTitle {
+  font-size: 1.8em;
+  font-weight: 600;
+}
+.articleContent {
+  font-size: 1.3em;
+  font-weight: 500;
+}
+.articleList {
+  font-size: 1.2em;
+  margin-bottom: 2em;
+}
+
+.orderedList {
+  font-size: 1.2em;
+  margin-bottom: 2em;
+}

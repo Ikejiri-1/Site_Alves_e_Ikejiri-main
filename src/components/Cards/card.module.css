@@ -17,7 +17,7 @@
   margin-top: 1em;
 }
 .subtitle {
-  font-size: 1.8em;
+  font-size: 1em;
   text-align: center;
   color: var(--dark-blue);
   padding: 0 1em;
@@ -86,4 +86,12 @@
 
 .btn:hover {
   letter-spacing: 0.02em;
+}
+
+.face {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  text-align: center;
+  align-items: center;
 }

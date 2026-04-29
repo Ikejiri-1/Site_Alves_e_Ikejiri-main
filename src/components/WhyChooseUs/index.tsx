@@ -32,7 +32,9 @@ const data = [
 export const WhyChooseUs = () => {
   return (
     <section className={styles.container}>
-      <h1 className={styles.title}>Por que nos escolher?</h1>
+      <div className={styles.ball}>
+        <h1 className={styles.title}>Por que nos escolher?</h1>
+      </div>
       <div className={styles.content}>
         {data.map((d) => {
           return (
@@ -41,7 +43,7 @@ export const WhyChooseUs = () => {
               key={d.id}
               className={styles.card}
               subtitle={d.description}
-            ></Cards>
+            />
           );
         })}
       </div>

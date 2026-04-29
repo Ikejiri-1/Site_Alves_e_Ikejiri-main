@@ -6,10 +6,10 @@
 .title {
   text-align: center;
   margin: 1em 0;
-  font-size: 2em;
+  font-size: 1.8em;
   color: var(--dark-blue);
   text-transform: uppercase;
-  font-weight: 800;
+  font-weight: 600;
 }
 
 .tabs {

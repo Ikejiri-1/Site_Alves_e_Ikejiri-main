@@ -41,11 +41,11 @@ export default async function ArticlePage({
           ← Voltar
         </Link>
       </nav>
-      <h1>{article.title}</h1>
-      <p>{article.description}</p>
+      <h1 className={styles.mainTitle}>{article.title}</h1>
+      <p className={styles.description}>{article.description}</p>
       {article.sections.map((section) => (
         <section key={section.heading}>
-          <h2>{section.heading}</h2>
+          <h2 className={styles.headingTitle}>{section.heading}</h2>
           <ArticleRenderer blocks={section.blocks} />
         </section>
       ))}
@@ -53,7 +53,7 @@ export default async function ArticlePage({
         href={`/areas-de-atuacao/${area}`}
         className={styles.breadcrumbHome}
       >
-        ← Voltar para o início
+        ← Voltar
       </Link>
     </main>
   );

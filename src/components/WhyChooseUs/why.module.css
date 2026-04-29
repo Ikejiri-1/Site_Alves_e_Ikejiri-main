@@ -1,26 +1,33 @@
 .container {
   display: flex;
+  gap: 0.5em;
+  justify-content: space-between;
   flex-direction: column;
-  justify-content: center;
+  align-items: center;
   width: 1200px;
-  margin: 0 auto;
-  margin-bottom: 2.5em;
+  margin: 2.5em auto;
+  padding: 1em;
 }
 .title {
-  font-size: 2em;
+  font-size: 1.8em;
   text-align: center;
   margin-top: 1em;
-  font-weight: 800;
+  font-weight: 600;
+  color: var(--dark-blue);
   text-transform: uppercase;
+  border: 1px solid #fff;
 }
 .content {
   display: flex;
   justify-content: center;
+  align-items: center;
+  text-align: center;
   gap: 2em;
   margin-top: 2em;
 }
 .card {
   border: 1px solid var(--dark-blue);
-  height: 270px;
+  width: 200px;
+  height: 200px;
   border-radius: 1em;
 }

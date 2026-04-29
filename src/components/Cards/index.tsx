@@ -1,7 +1,6 @@
 import Link from 'next/link';
 import styles from './card.module.css';
 import { JSX } from 'react';
-import { CardButton } from '../CardButton';
 import Image, { StaticImageData } from 'next/image';
 
 interface CardsProps {
@@ -44,7 +43,7 @@ export const Cards = ({
           <h3 className={styles.title}>{title}</h3>
           <h4 className={styles.subtitle}>{subtitle}</h4>
           <p className={styles.content}>{content}</p>
-          {showIcon && <span className={styles.flipHint}>{icon}</span>}
+          {showIcon && <span className={styles.cardIcon}>{icon}</span>}
           {button && (
             <Link href={href ?? '/'} className={styles.btn}>
               Saiba mais →

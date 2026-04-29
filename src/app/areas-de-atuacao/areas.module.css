@@ -1,47 +1,49 @@
-.container{
+.container {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   gap: 2em;
-  margin-top: 10em;
+  margin-top: 12em;
 }
-.areaSummary{
-  border: 1px solid var(--dark-blue);
-  border-radius: .5em;
+.areaSummary {
+  position: relative;
   width: 500px;
-  height: 440px;
+  height: 460px;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
-  flex-wrap: wrap;
-  padding: 1em;
-  background: var(--offWhite);
-  margin-top: 1em;
+  justify-content: space-between;
+  border: 1px solid #111;
+  border-radius: 4px;
+  padding: 1.3rem;
 }
-.areaSummary h1{
+.areaSummary h1 {
   font-size: 1.5em;
-  font-weight: 700;
+  font-weight: 600;
 }
-.areaSummary h2{
+.areaSummary h2 {
   font-size: 1.2em;
 }
-.areaSummary h3{
+.areaSummary h3 {
+  position: absolute;
+  top: 35%;
   font-weight: 600;
   color: #737373;
 }
-.listSummary{
+.listSummary {
+  position: absolute;
+  top: 40%;
   display: flex;
   flex-direction: column;
   list-style: disc;
   margin-left: 1em;
-  gap: .5em
+  gap: 0.5em;
 }
 
-.listSummary li{
-  font-size: 1.1em;
+.listSummary li {
+  font-size: 1em;
   font-weight: 600;
 }
-.buttonDiv{
+.buttonDiv {
   align-self: center;
   text-align: center;
 }

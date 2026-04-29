@@ -116,7 +116,7 @@ export default async function AreaPage({
       {/* ── Voltar ── */}
       <div className={styles.back}>
         <Link href="/" className={styles.backLink}>
-          ← Voltar para o início
+          ← Voltar
         </Link>
       </div>
     </main>
