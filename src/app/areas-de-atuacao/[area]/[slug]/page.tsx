@@ -8,7 +8,11 @@ export function generateStaticParams() {
   return allArticles.map((a) => ({ area: a.area, slug: a.slug }));
 }
 
-export function generateMetadata({ params }: { params: { slug: string } }) {
+export function generateMetadata({
+  params,
+}: {
+  params: { slug: string; area: string };
+}) {
   const article = getArticleBySlug(params.slug);
   if (!article) return {};
   return {
@@ -20,7 +24,7 @@ export function generateMetadata({ params }: { params: { slug: string } }) {
 export default async function ArticlePage({
   params,
 }: {
-  params: Promise<{ slug: string }>;
+  params: Promise<{ area: string; slug: string }>;
 }) {
   const { slug } = await params;
   const { area } = await params;
