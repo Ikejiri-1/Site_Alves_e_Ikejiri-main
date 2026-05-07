@@ -1,54 +1,46 @@
-"use client";
-import Image from "next/image";
-import styles from "./header.module.css";
-import logo from "../../assets/logo.png";
-import Link from "next/link";
-import { usePathname } from "next/navigation";
-import { useState, useEffect, useCallback } from "react";
-import path from "path";
+'use client';
+import Image from 'next/image';
+import styles from './header.module.css';
+import logo from '../../assets/logo.png';
+import Link from 'next/link';
+import { usePathname } from 'next/navigation';
+import { useState, useEffect, useCallback } from 'react';
+import path from 'path';
 
 const navLinks = [
-  { id: 1, name: "Home", path: "/" },
+  { id: 1, name: 'Home', path: '/' },
   {
     id: 2,
-    name: "Áreas de Atuação",
-    path: "/areas-de-atuacao",
+    name: 'Áreas de Atuação',
+    path: '/areas-de-atuacao',
   },
   {
-    id: 3,  
-    name: "Quem somos",
-    path: "/quem-somos",
-  },
-  {
-    id: 4,  
-    name: "Contato",
-    path: "/contato",
+    id: 3,
+    name: 'Quem somos',
+    path: '/quem-somos',
   },
 ];
 
 export const Header = () => {
   const pathname = usePathname();
   const [solid, setSolid] = useState(false);
-  
-  const handleScroll = useCallback(()=>{
-    if(pathname === "/"){
-      setSolid(window.scrollY >200)
-      }
-      else{
+
+  const handleScroll = useCallback(() => {
+    if (pathname === '/') {
+      setSolid(window.scrollY > 200);
+    } else {
       setSolid(true);
     }
-  },[pathname])
+  }, [pathname]);
 
-  useEffect(()=>{
-    handleScroll()
-    window.addEventListener("scroll", handleScroll)
-    return()=> window.removeEventListener("scroll", handleScroll)
-  },
-  [handleScroll]
-)
-  
+  useEffect(() => {
+    handleScroll();
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, [handleScroll]);
+
   return (
-    <header className={`${styles.heading} ${solid ? styles.solid : ""}`}>
+    <header className={`${styles.heading} ${solid ? styles.solid : ''}`}>
       <div className={styles.container}>
         <Link href="/">
           <Image

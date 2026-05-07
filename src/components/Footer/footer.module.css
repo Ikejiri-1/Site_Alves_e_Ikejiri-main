@@ -8,8 +8,8 @@
 .logo {
   width: 200px;
   height: 200px;
-  mask: url("/assets/logo_azul.png") no-repeat center / contain;
-  -webkit-mask: url("/assets/logo_azul.png") no-repeat center / contain;
+  mask: url('/assets/logo_azul.png') no-repeat center / contain;
+  -webkit-mask: url('/assets/logo_azul.png') no-repeat center / contain;
   background: var(--offWhite);
 }
 .contacts {
@@ -19,6 +19,11 @@
   display: flex;
   flex-direction: column;
   gap: 0.5em;
-  margin-top: 2em;
+  margin-top: 1em;
   font-size: 18px;
+}
+.title {
+  color: #fff;
+  font-size: 1.3em;
+  text-transform: uppercase;
 }

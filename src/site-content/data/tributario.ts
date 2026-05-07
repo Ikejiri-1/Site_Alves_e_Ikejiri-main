@@ -4,7 +4,8 @@ export const tributarioArticles: Article[] = [
   {
     slug: 'execucao-fiscal',
     area: 'tributario',
-    title: 'Execução Fiscal: Entenda o que é e quais os riscos de ignorar esta ação',
+    title:
+      'Execução Fiscal: Entenda o que é e quais os riscos de ignorar esta ação',
     description:
       'Muitos empresários e pessoas físicas são surpreendidos pela chegada de uma citação de Execução Fiscal. Entenda o que é, seus prazos críticos e como se defender.',
     sections: [
@@ -23,8 +24,15 @@ export const tributarioArticles: Article[] = [
           {
             type: 'simple-table',
             rows: [
-              { title: 'Tributários', description: 'ICMS, IPTU, IPVA, ISS, IRPJ e outros impostos.' },
-              { title: 'Não Tributários', description: 'Multas ambientais, de trânsito e administrativas.' },
+              {
+                title: 'Tributários',
+                description: 'ICMS, IPTU, IPVA, ISS, IRPJ e outros impostos.',
+              },
+              {
+                title: 'Não Tributários',
+                description:
+                  'Multas ambientais, de trânsito e administrativas.',
+              },
             ],
           },
         ],
@@ -71,10 +79,25 @@ export const tributarioArticles: Article[] = [
           {
             type: 'simple-table',
             rows: [
-              { title: 'Prescrição e Decadência', description: 'Quando o Estado perde o prazo legal para cobrar a dívida.' },
-              { title: 'Nulidade da CDA', description: 'Erros formais no título que embasa a execução.' },
-              { title: 'Excesso de Execução', description: 'Cobrança de valores maiores que os devidos ou juros abusivos.' },
-              { title: 'Impenhorabilidade', description: 'Proteção de bens indispensáveis, como o bem de família ou ferramentas de trabalho.' },
+              {
+                title: 'Prescrição e Decadência',
+                description:
+                  'Quando o Estado perde o prazo legal para cobrar a dívida.',
+              },
+              {
+                title: 'Nulidade da CDA',
+                description: 'Erros formais no título que embasa a execução.',
+              },
+              {
+                title: 'Excesso de Execução',
+                description:
+                  'Cobrança de valores maiores que os devidos ou juros abusivos.',
+              },
+              {
+                title: 'Impenhorabilidade',
+                description:
+                  'Proteção de bens indispensáveis, como o bem de família ou ferramentas de trabalho.',
+              },
             ],
           },
           {
@@ -104,8 +127,14 @@ export const tributarioArticles: Article[] = [
           {
             type: 'simple-table',
             rows: [
-              { title: 'Créditos Tributários', description: 'Impostos, taxas e contribuições de melhoria.' },
-              { title: 'Créditos Não Tributários', description: 'Multas e outros valores devidos ao ente público.' },
+              {
+                title: 'Créditos Tributários',
+                description: 'Impostos, taxas e contribuições de melhoria.',
+              },
+              {
+                title: 'Créditos Não Tributários',
+                description: 'Multas e outros valores devidos ao ente público.',
+              },
             ],
           },
         ],
@@ -126,11 +155,31 @@ export const tributarioArticles: Article[] = [
           {
             type: 'simple-table',
             rows: [
-              { title: 'Execução Fiscal', description: 'Ajuizamento de ação judicial para penhora e expropriação de bens.' },
-              { title: 'Bloqueio de Certidões', description: 'Impedimento de obter a CND, inviabilizando licitações e financiamentos.' },
-              { title: 'Inscrição no CADIN', description: 'Restrição de crédito junto a instituições financeiras e proibição de contratos públicos.' },
-              { title: 'Medidas Cautelares', description: 'Possibilidade de indisponibilidade de bens antes mesmo da execução.' },
-              { title: 'Interrupção da Prescrição', description: 'A inscrição pode interromper o prazo que o Estado tem para cobrar judicialmente.' },
+              {
+                title: 'Execução Fiscal',
+                description:
+                  'Ajuizamento de ação judicial para penhora e expropriação de bens.',
+              },
+              {
+                title: 'Bloqueio de Certidões',
+                description:
+                  'Impedimento de obter a CND, inviabilizando licitações e financiamentos.',
+              },
+              {
+                title: 'Inscrição no CADIN',
+                description:
+                  'Restrição de crédito junto a instituições financeiras e proibição de contratos públicos.',
+              },
+              {
+                title: 'Medidas Cautelares',
+                description:
+                  'Possibilidade de indisponibilidade de bens antes mesmo da execução.',
+              },
+              {
+                title: 'Interrupção da Prescrição',
+                description:
+                  'A inscrição pode interromper o prazo que o Estado tem para cobrar judicialmente.',
+              },
             ],
           },
         ],
@@ -141,8 +190,16 @@ export const tributarioArticles: Article[] = [
           {
             type: 'simple-table',
             rows: [
-              { title: 'Decadência', description: 'Prazo de 5 anos que o Estado tem para constituir o crédito tributário, contados do fato gerador. Se não o fizer, perde o direito de cobrar.' },
-              { title: 'Prescrição', description: 'Prazo de 5 anos para a Fazenda Pública cobrar judicialmente o crédito já constituído. A inscrição em Dívida Ativa interrompe esse prazo.' },
+              {
+                title: 'Decadência',
+                description:
+                  'Prazo de 5 anos que o Estado tem para constituir o crédito tributário, contados do fato gerador. Se não o fizer, perde o direito de cobrar.',
+              },
+              {
+                title: 'Prescrição',
+                description:
+                  'Prazo de 5 anos para a Fazenda Pública cobrar judicialmente o crédito já constituído. A inscrição em Dívida Ativa interrompe esse prazo.',
+              },
             ],
           },
         ],
@@ -165,7 +222,8 @@ export const tributarioArticles: Article[] = [
   {
     slug: 'prescricao-intercorrente',
     area: 'tributario',
-    title: 'Prescrição Intercorrente: Quando o Tempo Extingue a Execução Fiscal',
+    title:
+      'Prescrição Intercorrente: Quando o Tempo Extingue a Execução Fiscal',
     description:
       'Se a Fazenda Pública não conseguir localizar bens penhoráveis dentro de um determinado período, ocorre a Prescrição Intercorrente, que resulta na extinção definitiva da dívida.',
     sections: [
@@ -204,9 +262,21 @@ export const tributarioArticles: Article[] = [
           {
             type: 'simple-table',
             rows: [
-              { title: 'Extinção do Débito', description: 'O reconhecimento extingue o crédito tributário, limpa o nome do devedor e libera restrições.' },
-              { title: 'Segurança Jurídica', description: 'Impede que o Estado cobre dívidas de décadas atrás, cujos documentos o contribuinte muitas vezes nem possui mais.' },
-              { title: 'Economia', description: 'Evita o pagamento de multas e juros que, em processos muito antigos, costumam ultrapassar o valor do próprio imposto.' },
+              {
+                title: 'Extinção do Débito',
+                description:
+                  'O reconhecimento extingue o crédito tributário, limpa o nome do devedor e libera restrições.',
+              },
+              {
+                title: 'Segurança Jurídica',
+                description:
+                  'Impede que o Estado cobre dívidas de décadas atrás, cujos documentos o contribuinte muitas vezes nem possui mais.',
+              },
+              {
+                title: 'Economia',
+                description:
+                  'Evita o pagamento de multas e juros que, em processos muito antigos, costumam ultrapassar o valor do próprio imposto.',
+              },
             ],
           },
         ],
@@ -231,7 +301,7 @@ export const tributarioArticles: Article[] = [
     area: 'tributario',
     title: 'O Bloqueio "Teimosinha" do SISBAJUD: Como se Proteger Legalmente',
     description:
-      'A "Teimosinha" permite o bloqueio contínuo de contas por até 30 dias. Entenda como funciona e quais estratégias jurídicas existem para combater bloqueios abusivos.',
+      'A "Teimosinha" permite o bloqueio contínuo de contas por até 30 dias. Entenda como funciona e quais estratégias jurídicas existem para combater bloqueios.',
     sections: [
       {
         heading: 'O que é a Teimosinha?',
@@ -291,7 +361,8 @@ export const tributarioArticles: Article[] = [
   {
     slug: 'transacao-tributaria',
     area: 'tributario',
-    title: 'Regularização de Dívidas: Transação Tributária e Parcelamentos Fiscais',
+    title:
+      'Regularização de Dívidas: Transação Tributária e Parcelamentos Fiscais',
     description:
       'A Transação Tributária oferece descontos de até 70% e prazos de até 145 meses. Entenda como negociar suas dívidas com o Fisco de forma vantajosa.',
     sections: [
@@ -321,11 +392,38 @@ export const tributarioArticles: Article[] = [
             type: 'comparison-table',
             headers: ['Receita Federal (RFB)', 'PGFN (Dívida Ativa)'],
             rows: [
-              { label: 'Fase do Débito', values: ['Administrativa (antes da inscrição)', 'Judicial ou inscrita em Dívida Ativa'] },
-              { label: 'Descontos', values: ['Inexistentes ou limitados a editais raros', 'Altos descontos baseados na capacidade de pagamento (Capag)'] },
-              { label: 'Flexibilidade', values: ['Regras rígidas e automáticas', 'Transação Individual ou por Adesão'] },
-              { label: 'Prazo Máximo', values: ['Geralmente até 60 meses', 'Até 120 ou 145 meses'] },
-              { label: 'Análise de Risco', values: ['Não considera a dificuldade financeira real', 'Avalia o grau de recuperabilidade do crédito (A, B, C ou D)'] },
+              {
+                label: 'Fase do Débito',
+                values: [
+                  'Administrativa (antes da inscrição)',
+                  'Judicial ou inscrita em Dívida Ativa',
+                ],
+              },
+              {
+                label: 'Descontos',
+                values: [
+                  'Inexistentes ou limitados a editais raros',
+                  'Altos descontos baseados na capacidade de pagamento (Capag)',
+                ],
+              },
+              {
+                label: 'Flexibilidade',
+                values: [
+                  'Regras rígidas e automáticas',
+                  'Transação Individual ou por Adesão',
+                ],
+              },
+              {
+                label: 'Prazo Máximo',
+                values: ['Geralmente até 60 meses', 'Até 120 ou 145 meses'],
+              },
+              {
+                label: 'Análise de Risco',
+                values: [
+                  'Não considera a dificuldade financeira real',
+                  'Avalia o grau de recuperabilidade do crédito (A, B, C ou D)',
+                ],
+              },
             ],
           },
         ],

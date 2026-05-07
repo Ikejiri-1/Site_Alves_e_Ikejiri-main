@@ -1,24 +1,25 @@
-import styles from "./footer.module.css";
+import styles from './footer.module.css';
 
 export const Footer = () => {
   const contacts = [
     {
       id: 1,
-      contact: "(12) 98113-1591",
+      contact: '(12) 98113-1591',
     },
     {
       id: 2,
-      contact: "caio.ikejiri@adv.oabsp.org.br",
+      contact: 'caio.ikejiri@adv.oabsp.org.br',
     },
     {
       id: 3,
-      contact: "caioalves@adv.oabsp.org.br",
+      contact: 'caioalves@adv.oabsp.org.br',
     },
   ];
   return (
     <footer className={styles.footer}>
       <figure className={styles.logo}></figure>
       <div>
+        <h1 className={styles.title}>contatos :</h1>
         <ul className={styles.contactsList}>
           {contacts.map((c) => (
             <li key={c.id}>
