@@ -47,3 +47,28 @@
   align-self: center;
   text-align: center;
 }
+
+@media screen and (max-width: 1024px) {
+  .container {
+    margin-top: 16.5em;
+  }
+}
+@media screen and (max-width: 768px) {
+  .container {
+    margin: 0 auto;
+    margin-top: 8em;
+    width: 90%;
+  }
+  .listSummary li {
+    font-size: 0.8em;
+  }
+  .listSummary {
+    margin-top: 0.5em;
+  }
+  .areaSummary {
+    height: 400px;
+  }
+  .buttonDiv {
+    font-size: 0.8em;
+  }
+}

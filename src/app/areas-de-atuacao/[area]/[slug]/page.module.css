@@ -114,3 +114,64 @@
   margin-bottom: 2em;
   text-align: center;
 }
+
+@media (max-width: 1280px) {
+  .main {
+    width: 90%;
+    max-width: 1200px;
+    margin-top: 10em;
+  }
+
+  .container {
+    margin: 0 2em;
+  }
+}
+
+@media (max-width: 1024px) {
+  .main {
+    width: 92%;
+    margin-top: 14em;
+  }
+  .mainTitle,
+  .headingTitle {
+    font-size: 1.5em;
+  }
+
+  .description,
+  .articleContent,
+  .articleList,
+  .orderedList {
+    font-size: 1.1em;
+  }
+}
+
+@media (max-width: 768px) {
+  .main {
+    width: 94%;
+    margin-top: 7em;
+  }
+  .breadcrumb,
+  .breadcrumbAreas {
+    gap: 0.35rem;
+    font-size: 0.9rem;
+  }
+
+  .breadcrumbLink {
+    padding: 0.1rem 0.25rem;
+  }
+
+  .mainTitle,
+  .headingTitle {
+    font-size: 1.35em;
+    padding: 0 0.5em;
+  }
+
+  .description,
+  .articleContent,
+  .articleList,
+  .orderedList {
+    font-size: 1em;
+    line-height: 1.5;
+    text-align: left;
+  }
+}

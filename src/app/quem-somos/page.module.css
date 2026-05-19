@@ -63,3 +63,50 @@
 .cardPhoto {
   width: 200px;
 }
+
+@media screen and (max-width: 1280px) {
+  .institutionalContainer {
+    width: 70%;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .institutionalContainer {
+    width: 70%;
+    margin-top: 7em;
+  }
+  .lawyersCardsContainer {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    gap: 1em;
+  }
+}
+@media screen and (max-width: 768px) {
+  .institutionalContainer {
+    flex-direction: column;
+    width: 90%;
+    text-align: center;
+    align-items: center;
+    margin-top: 0;
+  }
+  .institutionalText {
+    font-size: 1em;
+    width: 300px;
+    text-align: center;
+  }
+  .lawyersCardsContainer {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 20%;
+    gap: 1em;
+  }
+  .card {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    align-items: center;
+    text-align: center;
+  }
+}

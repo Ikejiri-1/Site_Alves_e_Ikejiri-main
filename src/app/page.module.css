@@ -2,46 +2,31 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 1200px;
   margin: 0 auto;
   margin-top: 2em;
+  width: 100%; /* Garante que ela comece ocupando o espaço total disponível */
+  max-width: 1200px; /* Limita um tamanho máximo elegante para desktop */
 }
+
 .topDiv {
   padding-top: 11em;
   padding-bottom: 2em;
   background-color: var(--dark-blue);
   text-align: center;
 }
+
+/* CORREÇÃO IMPORTANTE: Tirar o width fixo de 700px do h1, pois ele quebra o mobile */
 .topDiv h1 {
   font-size: 2.5em;
-  width: 700px;
+  width: 100%;
+  max-width: 700px;
   margin: 0 auto;
   color: #fff;
 }
+
 .topDiv h2 {
   font-size: 1.5em;
   color: #fff;
-}
-.glass {
-  background: linear-gradient(
-    135deg,
-    rgba(255, 255, 255, 0.1),
-    rgba(255, 255, 255, 0.1)
-  );
-  backdrop-filter: blur(16px);
-  -webkit-backdrop-filter: blur(16px);
-  border: 1px solid rgba(255, 255, 255, 0.25);
-  box-shadow:
-    0 20px 50px rgba(0, 0, 0, 0.3),
-    inset 0 10px 20px rgba(255, 255, 255, 0.25),
-    inset 0 -10px 20px rgba(0, 0, 0, 0.2);
-  padding: 1em 0;
-  width: 800px;
-  margin: 0 auto;
-  border-radius: 6em;
-}
-.objectivesSection > * {
-  flex: 1;
 }
 
 .cardsSection {
@@ -56,7 +41,8 @@
 }
 
 .CTA {
-  width: 500px;
+  width: 100%;
+  max-width: 500px; /* Substituído width fixo por max-width */
   margin: 0 auto;
   display: flex;
   text-align: center;
@@ -73,4 +59,36 @@
 .CTA h5 {
   font-size: 1.1em;
   font-weight: 600;
+}
+
+/* ==========================================================================
+   MEDIA QUERY ATUALIZADA (768px)
+   ========================================================================== */
+@media screen and (max-width: 768px) {
+  .objectivesSection {
+    width: 90%; /* Agora o container vai obedecer e ocupar 90% da largura da tela */
+    flex-direction: column; /* Se houverem elementos lado a lado, eles vão empilhar no mobile */
+    gap: 1.5rem;
+    /* Removido o font-size: 0.3em que sumia com o texto */
+  }
+
+  /* Faz a seção de cards também empilhar no mobile verticalmente */
+  .cardsSection {
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: 1.5rem 1rem;
+  }
+
+  .topDiv {
+    padding-top: 7em; /* Diminui o espaçamento superior no mobile */
+  }
+
+  .topDiv h1 {
+    font-size: 1.8em; /* Diminui o tamanho do título para não quebrar feio */
+    padding: 0 1rem;
+  }
+
+  .CTA {
+    width: 90%; /* Ocupa 90% da tela do celular de forma fluida */
+  }
 }

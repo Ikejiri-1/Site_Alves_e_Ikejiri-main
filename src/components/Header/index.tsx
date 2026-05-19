@@ -4,9 +4,7 @@ import styles from './header.module.css';
 import logo from '../../assets/logo.png';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
-import { useState, useEffect, useCallback } from 'react';
-
-// Removi o import 'path' que não estava sendo usado
+import { useState, useEffect, useCallback, useRef } from 'react';
 
 const navLinks = [
   { id: 1, name: 'Home', path: '/' },
@@ -18,24 +16,24 @@ const navLinks = [
 export const Header = () => {
   const pathname = usePathname();
   const [solid, setSolid] = useState(false);
-  // const [isMenuOpen, setIsMenuOpen] = useState(false);
-  // const menuRef = useRef<HTMLDivElement>(null);
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const menuRef = useRef(null);
 
-  // // Fecha o menu ao clicar fora
-  // useEffect(() => {
-  //   const handleClickOutside = (e: MouseEvent) => {
-  //     if (menuRef.current && !menuRef.current.contains(e.target as Node)) {
-  //       setIsMenuOpen(false);
-  //     }
-  //   };
-  //   document.addEventListener('mousedown', handleClickOutside);
-  //   return () => document.removeEventListener('mousedown', handleClickOutside);
-  // }, []);
+  useEffect(() => {
+    const handleClickOutside = (e) => {
+      if (menuRef.current && !menuRef.current.contains(e.target)) {
+        setIsMenuOpen(false);
+      }
+    };
+    if (isMenuOpen) {
+      document.addEventListener('mousedown', handleClickOutside);
+    }
+    return () => document.removeEventListener('mousedown', handleClickOutside);
+  }, [isMenuOpen]);
 
-  // // Fecha o menu ao mudar de rota
-  // useEffect(() => {
-  //   setIsMenuOpen(false);
-  // }, [pathname]);
+  useEffect(() => {
+    setIsMenuOpen(false);
+  }, [pathname]);
 
   const handleScroll = useCallback(() => {
     if (pathname === '/') {
@@ -51,13 +49,30 @@ export const Header = () => {
     return () => window.removeEventListener('scroll', handleScroll);
   }, [handleScroll]);
 
+  const toggleMenu = () => {
+    setIsMenuOpen((prev) => !prev);
+  };
+
   return (
     <header className={`${styles.heading} ${solid ? styles.solid : ''}`}>
-      <div className={styles.container}>
+      <div className={styles.container} ref={menuRef}>
         <Link href="/">
-          <Image src={logo} alt="Logo" className={styles.logo} />
+          <figure className={styles.logoCell}>
+            <Image src={logo} alt="Logo" className={styles.logo} priority />
+          </figure>
         </Link>
-        <nav className={styles.navBar}>
+
+        <button
+          className={`${styles.hamburger} ${isMenuOpen ? styles.hamburgerActive : ''}`}
+          onClick={toggleMenu}
+          aria-label="Menu de navegação"
+        >
+          <span className={styles.bar}></span>
+          <span className={styles.bar}></span>
+          <span className={styles.bar}></span>
+        </button>
+
+        <nav className={`${styles.navBar} ${isMenuOpen ? styles.isOpen : ''}`}>
           {navLinks.map((link) => {
             const isAreas = link.path === '/areas-de-atuacao';
 

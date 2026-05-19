@@ -3,6 +3,7 @@
   margin-top: 1em;
   padding: 2em;
   display: flex;
+  width: 100%;
   gap: 5em;
 }
 .logo {
@@ -20,10 +21,22 @@
   flex-direction: column;
   gap: 0.5em;
   margin-top: 1em;
-  font-size: 18px;
+  font-size: 1em;
 }
 .title {
   color: #fff;
   font-size: 1.3em;
   text-transform: uppercase;
+}
+
+@media screen and (max-width: 768px) {
+  .contactsList {
+    font-size: 0.8em;
+  }
+  .title {
+    margin-top: 2em;
+  }
+  .footer {
+    padding-top: 0;
+  }
 }

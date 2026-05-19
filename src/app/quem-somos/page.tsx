@@ -28,7 +28,6 @@ export default function QuemSomos() {
 
         <div className={styles.lawyersCardsContainer}>
           {lawyerCard.map((card) => {
-            // CORREÇÃO 1: Adicionado o .default para pegar o objeto correto da imagem importada
             const lawyerImage = require(`../../assets/${card.photo}`).default;
 
             return (

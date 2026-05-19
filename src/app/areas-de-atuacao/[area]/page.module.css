@@ -210,9 +210,23 @@
   color: #111;
 }
 
-/* ─── Responsivo ─────────────────────────────────────────────────────────────── */
+@media (max-width: 1024px) {
+  .breadcrumbAreas,
+  .breadcrumbHome,
+  .breadcrumbDivider {
+    margin-top: 5em;
+  }
+}
 
-@media (max-width: 640px) {
+@media (max-width: 768px) {
+  .breadcrumbAreas,
+  .breadcrumbHome,
+  .breadcrumbDivider {
+    margin-top: 0em;
+  }
+  .main {
+    width: 100%;
+  }
   .grid {
     grid-template-columns: 1fr;
   }

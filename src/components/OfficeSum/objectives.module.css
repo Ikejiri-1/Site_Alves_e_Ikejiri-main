@@ -1,5 +1,6 @@
-.summary{
-  width: 800px;
+.summary {
+  max-width: 1200px;
+  width: 100%;
   margin: 1em auto;
   text-align: center;
   font-size: 1.1em;

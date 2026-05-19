@@ -61,9 +61,8 @@ export const WhyChooseUs = () => {
       ref={sectionRef}
       className={`${styles.container} ${isVisible ? styles.animate : ''}`}
     >
-      <div className={styles.ball}>
-        <h1 className={styles.title}>Por que nos escolher?</h1>
-      </div>
+      <h1 className={styles.title}>Por que nos escolher?</h1>
+
       <div className={styles.content}>
         {data.map((d) => {
           return (

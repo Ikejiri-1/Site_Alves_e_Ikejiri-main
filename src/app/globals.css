@@ -1,4 +1,4 @@
-@import "tailwindcss";
+@import 'tailwindcss';
 
 * {
   color: var(--dark-blue);
@@ -16,8 +16,16 @@ html {
   overflow-y: scroll;
 }
 
-.fixedWhatsappButton{
+.fixedWhatsappButton {
   position: fixed;
   bottom: 20px;
   right: 20px;
+}
+.globalWrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+.mainContentHtml {
+  flex: 1;
 }

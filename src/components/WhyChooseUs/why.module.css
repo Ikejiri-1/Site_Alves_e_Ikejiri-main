@@ -4,7 +4,7 @@
   justify-content: space-between;
   flex-direction: column;
   align-items: center;
-  width: 1200px;
+  flex-wrap: wrap;
   margin: 2.5em auto;
   padding: 1em;
 }
@@ -33,7 +33,6 @@
 }
 .card {
   opacity: 0;
-  transform: translateX(50px);
   transition:
     transform 0.6s cubic-bezier(0.25, 1, 0.5, 1),
     opacity 0.6s ease;
@@ -57,4 +56,16 @@
 }
 .animate .card:nth-child(4) {
   transition-delay: 0.55s;
+}
+@media screen and (max-width: 1024px) {
+  .content {
+    max-width: 600px;
+    flex-wrap: wrap;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .content {
+    flex-direction: column;
+  }
 }

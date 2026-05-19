@@ -6,6 +6,9 @@
   width: 100%;
   height: 18vh;
   backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  background: color-mix(in srgb, var(--dark-blue) 80%, transparent);
+  display: flex; /* Adicionado para garantir o alinhamento vertical */
   align-items: center;
   padding: 0 2em;
   transition:
@@ -25,6 +28,7 @@
   align-items: center;
   justify-content: space-between;
   margin: 0 5em;
+  width: 100%; /* Garante que ocupe o espaço disponível */
   max-width: 1600px;
 }
 
@@ -32,6 +36,7 @@
   width: 250px;
   height: 200px;
   margin-top: -0.5em;
+  object-fit: contain;
 }
 
 .navBar {
@@ -39,7 +44,7 @@
   justify-content: space-between;
   text-align: center;
   align-items: center;
-  gap: 1em;
+  gap: 2em; /* Aumentado o gap para espaçar melhor */
 }
 
 .link {
@@ -47,9 +52,128 @@
   text-decoration: underline solid transparent;
   text-underline-offset: 5px;
   font-size: 1.05em;
-  margin-top: -1.5em;
+  transition:
+    color 0.2s ease,
+    text-decoration 0.2s ease;
 }
 
 .isActive {
   text-decoration: underline solid var(--offWhite);
+}
+
+/* Esconde o hambúrguer no Desktop */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 21px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  z-index: 1010;
+  padding: 0;
+}
+
+.bar {
+  width: 100%;
+  height: 3px;
+  background-color: var(--offWhite);
+  border-radius: 2px;
+  transition:
+    transform 0.3s ease,
+    opacity 0.3s ease;
+}
+
+/* Media Queries existentes e novos ajustes */
+@media screen and (max-width: 1280px) {
+  .logo {
+    width: 220px;
+    height: 160px;
+    margin-top: -0.5em;
+  }
+  .container {
+    margin: 0 2em;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  /* Removido o flex-direction: column antigo para manter a logo alinhada com o menu */
+  .container {
+    flex-direction: row;
+  }
+  .link {
+    font-size: 1.2em;
+  }
+  .logo {
+    width: 300px;
+    height: 260px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .heading {
+    height: 12vh;
+  }
+
+  .logo {
+    width: 160px;
+    height: 160px;
+    margin-top: 0;
+    display: none;
+  }
+  .logoCell {
+    width: 80px;
+    height: 80px;
+    mask: url('/assets/logo_azul.png') no-repeat center / contain;
+    -webkit-mask: url('/assets/logo_azul.png') no-repeat center / contain;
+    background: var(--offWhite);
+    margin-left: -1em;
+  }
+
+  .container {
+    margin: 0 1rem;
+    flex-direction: row;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+
+  .hamburgerActive .bar:nth-child(1) {
+    transform: translateY(9px) rotate(45deg);
+  }
+  .hamburgerActive .bar:nth-child(2) {
+    opacity: 0;
+  }
+  .hamburgerActive .bar:nth-child(3) {
+    transform: translateY(-9px) rotate(-45deg);
+  }
+
+  .navBar {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 280px;
+    height: 45vh;
+    background-color: var(--dark-blue);
+    box-shadow: -5px 0 15px rgba(0, 0, 0, 0.3);
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 8rem 2rem 2rem 2rem;
+    gap: 2rem;
+    transition: right 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+    z-index: 1005;
+  }
+
+  .navBar.isOpen {
+    right: 0;
+  }
+
+  .link {
+    font-size: 1.2em;
+    display: block;
+    width: 100%;
+    text-align: left;
+  }
 }
