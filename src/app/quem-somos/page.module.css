@@ -1,59 +1,65 @@
-.image{
-    width: 600px;
-    height: 400px;
+.image {
+  width: 300px;
+  height: 400px;
+  border-radius: 0.25em;
 }
 
-.institutionalContainer{
-    width: 60%;
-    margin: 1em auto;
-    display: flex;
-    gap: 2em;
-    padding: 1em;
-    background-color: var(--dark-blue);
+.institutionalContainer {
+  width: 50%;
+  margin: 1em auto;
+  border-radius: 0.25em;
+  display: flex;
+  justify-content: space-around;
+  gap: 2em;
+  padding: 1em;
+  background-color: var(--dark-blue);
 }
-.institutionalText{
-    width: 500px;
-    font-size: 1.3em;
-    align-self: center;
-    line-height: 200%;
-    
+.institutionalText {
+  width: 500px;
+  font-size: 1.3em;
+  align-self: center;
+  line-height: 200%;
 }
-.institutionalText p{
-    color: var(--offWhite);
-}
-
-.lawyersCardsContainer{
-    display: flex;
-    justify-content: center;
-    gap: 4em;
-    width: 90%;
-    margin: 2em auto;
-}
-.card{
-    border: 1px solid var(--dark-blue);
-    border-radius: .5em;
-    background: var(--dark-blue);
-    padding: 1em;
-    width: 600px;
-    
-}
-.cardHead h1{
-    font-size: 1.5em;
-    color: var(--offWhite);
-}
-.cardHead p{
-    font-size: .9em;
-    color: #00b3ff
-}
-.cardBody{
-    font-size: 1.1em;
-    color: var(--offWhite);
-}
-.btn{
-    text-align: center;
-    margin: 2em 0;
+.institutionalText p {
+  color: var(--offWhite);
 }
 
-.section{
-    margin-top: 12em;
+.lawyersCardsContainer {
+  display: flex;
+  justify-content: center;
+  gap: 4em;
+  width: 90%;
+  margin: 2em auto;
+}
+.card {
+  display: flex;
+  border: 1px solid var(--dark-blue);
+  border-radius: 0.5em;
+  background: var(--dark-blue);
+  padding: 1em;
+  width: 600px;
+}
+.cardHead h1 {
+  font-size: 1.5em;
+  color: var(--offWhite);
+}
+.cardHead p {
+  font-size: 0.9em;
+  color: #00b3ff;
+}
+.cardBody {
+  font-size: 1.1em;
+  color: var(--offWhite);
+}
+.btn {
+  text-align: center;
+  margin: 2em 0;
+}
+
+.section {
+  margin-top: 12em;
+}
+
+.cardPhoto {
+  width: 200px;
 }

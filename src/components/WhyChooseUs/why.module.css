@@ -31,3 +31,30 @@
   height: 200px;
   border-radius: 1em;
 }
+.card {
+  opacity: 0;
+  transform: translateX(50px);
+  transition:
+    transform 0.6s cubic-bezier(0.25, 1, 0.5, 1),
+    opacity 0.6s ease;
+}
+
+/* Quando o container ganhar a classe .animate, os cards deslizam para a posição original */
+.animate .card {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* Efeito cascata: cada card espera um pouquinho mais que o anterior para aparecer */
+.animate .card:nth-child(1) {
+  transition-delay: 0.1s;
+}
+.animate .card:nth-child(2) {
+  transition-delay: 0.25s;
+}
+.animate .card:nth-child(3) {
+  transition-delay: 0.4s;
+}
+.animate .card:nth-child(4) {
+  transition-delay: 0.55s;
+}

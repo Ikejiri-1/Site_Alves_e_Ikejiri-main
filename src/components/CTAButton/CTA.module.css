@@ -1,35 +1,35 @@
-.CTAbtn{
-    background-color: #25D366;
-    padding: 0.5em;
-    border-radius: .5em;
-    font-size: 1.5em;
-    cursor: pointer;
-    text-align: center;
-    color: var(--offWhite);
+.default {
+  background-color: #25d366;
+  padding: 0.5em;
+  border-radius: 0.5em;
+  font-size: 1.5em;
+  cursor: pointer;
+  text-align: center;
+  color: var(--offWhite);
 }
 
-.CTAArea{
-    background-color: #25D366 ;
-    padding: .5em;
-    border-radius: .5em;
-    color: var(--offWhite);
-    font-size: 1em;
-    font-weight: 600;
+.CTAArea {
+  background-color: #25d366;
+  padding: 0.5em;
+  border-radius: 0.5em;
+  color: var(--offWhite);
+  font-size: 1em;
+  font-weight: 600;
 }
 
-.CTA:hover{
-    background-color: #047232;
-    transition: all ease-in-out;
+.CTA:hover {
+  background-color: #047232;
+  transition: all ease-in-out;
 }
 
-.CTAContact{
-    background-color: var(--dark-blue);
-    padding: .5em;
-    color: var(--offWhite);
-    border-radius: .5em;
+.CTAContact {
+  background-color: var(--dark-blue);
+  padding: 0.5em;
+  color: var(--offWhite);
+  border-radius: 0.5em;
 }
 
-.CTAContact:hover{
-    background-color: #071fad;
-    transition: all ease-in-out 0.3s;
+.CTAContact:hover {
+  background-color: #071fad;
+  transition: all ease-in-out 0.3s;
 }

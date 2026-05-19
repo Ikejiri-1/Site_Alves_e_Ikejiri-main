@@ -2,6 +2,7 @@
   width: 100%;
   max-width: 1000px;
   margin: 0 auto;
+  overflow: hidden;
 }
 .title {
   text-align: center;
@@ -86,14 +87,41 @@
 }
 .cards {
   width: 300px;
-  height: 200px;
+  opacity: 0;
+  transition:
+    transform 0.8s cubic-bezier(0.25, 1, 0.5, 1),
+    opacity 0.8s ease;
 }
 
-@keyframes appear {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
+/* Cards ÍMPARES (1º, 3º, 5º...) vêm da ESQUERDA */
+.cards:nth-child(odd) {
+  transform: translateX(-50px);
+}
+
+/* Cards PARES (2º, 4º, 6º...) vêm da DIREITA */
+.cards:nth-child(even) {
+  transform: translateX(50px);
+}
+
+/* 2. ESTADO ANIMADO (Quando entra na tela) */
+.animate .cards {
+  opacity: 1;
+  transform: translateX(0); /* Todos vão para a posição correta */
+}
+
+/* 3. EFEITO CASCATA (Delay/Atraso para cada um aparecer em sequência) */
+.animate .cards:nth-child(1) {
+  transition-delay: 0.1s;
+}
+.animate .cards:nth-child(2) {
+  transition-delay: 0.4s;
+}
+.animate .cards:nth-child(3) {
+  transition-delay: 0.7s;
+}
+.animate .cards:nth-child(4) {
+  transition-delay: 1s;
+}
+.animate .cards:nth-child(5) {
+  transition-delay: 1.3s;
 }
