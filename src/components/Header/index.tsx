@@ -20,7 +20,7 @@ export const Header = () => {
   const menuRef = useRef(null);
 
   useEffect(() => {
-    const handleClickOutside = (e) => {
+    const handleClickOutside = (e: MouseEvent) => {
       if (menuRef.current && !menuRef.current.contains(e.target)) {
         setIsMenuOpen(false);
       }
